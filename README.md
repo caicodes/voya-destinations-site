@@ -1,42 +1,31 @@
-# Nuxt 3 Minimal Starter
+# Voya Destinations... 
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Started from a snazzy starter in parallel as it grows. Setting up a 'workspace' or examples master repo would be nice... yarn workspaces are perhaps a little tricky, but it could be ideal. I will figure it out as we build, same reason for forking this and moving forward on the Voya Destinations project.
 
-## Setup
+## A Nuxt Deluxe project
 
-Make sure to install the dependencies:
+<img src="./project/status-update.png" />
 
-```bash
-# yarn
-yarn install
+Now, with a fancy spinner welcome, we have the completed starter... The ui, the styling, the theming, and the animations are all fully loaded and ready to go with
 
-# npm
-npm install
+- TailwindCSS 
+- daisyUI
+- GSAP 
+- Nuxt Color Mode
+- Soon to be added...
+  - @nuxt/content
+  - firebase
+  - @tailwindcss/templates/themes/storybook etc... 
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+This project to showcase a variety of projects...
 
-## Development Server
+-   StripeSafePay (Stripe)
+-   PhoenixFire (Firebase)
+-   Butterfly (Flutter)
+-   DaisiesInTheWind (Next Blog)
+-   TailwindCSS Themes (Artasce)
+-   TailwindCSS Templates (Artasce)
+-   PinaColada (Pinia)
 
-Start the development server on http://localhost:3000
 
-```bash
-npm run dev
-```
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
