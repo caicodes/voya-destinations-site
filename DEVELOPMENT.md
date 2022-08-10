@@ -568,7 +568,15 @@ I struggled to get this configuration to work and spent a few hours and was extr
 https://content.nuxtjs.org/
 
 
+# forked version begins here...
 
+Just starting this as the Voya Destinations project, immediate next steps include:
+- Pinia Integration
+- Vue composition api state Management implementation
+- Counters, Todos, etc... built in `admin/settings` for sites... can then be persisted, remote config? etc...
+- Animations for Elements... the navbar, the color modes, floating menus, etc...
+
+For now... firebase? or more theme setting stuff? or... content... or hero builders... all integrated for use together and maximum reusability as standalone project in dev tandem
 
 
 
