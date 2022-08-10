@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  transition: background-color 0.618s linear;
+}
+
+.preferred {
+  @apply rounded-full;
+  transition: background 0.4s ease-in;
+}
+
+.icon-colormode .preferred {
+  @apply bg-accent-focus;
+}

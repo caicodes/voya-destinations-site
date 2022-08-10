@@ -1,0 +1,10 @@
+<template>
+  <div class="relative">
+    <ColormodeSettings />
+    <div class="h-screen grid place-items-center justify-center text-center">
+      <div>
+        <HelloDaisy />
+      </div>
+    </div>
+  </div>
+</template>
