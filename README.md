@@ -28,4 +28,8 @@ This project to showcase a variety of projects...
 -   PinaColada (Pinia)
 
 
+# Now with Nuxt Content...
+
+
+<img src="./project/hello-content.png" />
 

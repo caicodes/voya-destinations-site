@@ -547,6 +547,7 @@ Now, with a fancy spinner welcome, we have the completed starter... The ui, the 
 - daisyUI
 - GSAP 
 - Nuxt Color Mode
+- Nuxt Content
 
 And soon I look to add:
 
@@ -557,7 +558,7 @@ And soon I look to add:
   - Functions
   - Hosting
 
-There will be many projects that this will be an ideal seed for! And regardless of whether they be heavy or light on the  `content` such as the text, labels, titles, etc... the next evolution of this project will be the implementation of a content system where the written content (variable) can be separated from as much markup as possible... the easy of maintaining and adding content when using markdown or outsite sources (headless cms) will be extremely useful... especially since this is a starter project! So... enter `@nuxtjs/content`
+There will be many projects that this will be an ideal seed for! And regardless of whether they be heavy or light on the  `content` such as the text, labels, titles, etc... the next evolution of this project will be the implementation of a content system where the written content (variable) can be separated from as much markup as possible... the easy of maintaining and adding content when using markdown or outsite sources (headless cms) will be extremely useful... especially since this is a starter project! So... enter `@nuxt/content`
 
 ### The Nuxt content option...
 
