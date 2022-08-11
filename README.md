@@ -30,6 +30,27 @@ This project to showcase a variety of projects...
 
 # Now with Nuxt Content...
 
+```javascript
+<template>
+    <main>
+        <ContentDoc class="prose" />
+    </main>
+</template>
+
+```
 
 <img src="./project/hello-content.png" />
 
+Next, sidebars, filler stuff such as copyright, etc... all in portable amazing content directories! Time to start creatin come...
+```javascript
+<template>
+  <nav>
+    <ContentNavigation v-slot="{ navigation }">
+      <div v-for="link of navigation" :key="link._path">
+        <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
+      </div>
+    </ContentNavigation>
+  </nav>
+</template>
+
+```
