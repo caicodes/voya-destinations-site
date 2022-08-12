@@ -555,6 +555,14 @@
     lodash.template "^4.5.0"
     pathe "^0.3.0"
 
+"@pinia/nuxt@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.4.0.tgz#78340abbab0fc5809dc66550352f5aa2d4b9031d"
+  integrity sha512-gJ0qRJ5KhpFrYVs6qdqTWXPp9DAzbs9u74zJw5hyQO7tRiItRUYQxbWtWjGC3XUw5oO73xYrA8lYa5/GMW0uSg==
+  dependencies:
+    "@nuxt/kit" "3.0.0-rc.6"
+    pinia ">=2.0.18"
+
 "@rollup/plugin-alias@^3.1.9":
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.9.tgz#a5d267548fe48441f34be8323fb64d1d4a1b3fdf"
@@ -837,7 +845,7 @@
     "@vue/compiler-dom" "3.2.37"
     "@vue/shared" "3.2.37"
 
-"@vue/devtools-api@^6.1.4":
+"@vue/devtools-api@^6.1.4", "@vue/devtools-api@^6.2.1":
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.2.1.tgz#6f2948ff002ec46df01420dfeff91de16c5b4092"
   integrity sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ==
@@ -3990,6 +3998,14 @@ pify@^2.3.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
 
+pinia@>=2.0.18:
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.18.tgz#b29ed34bcb4c032b7da7c24c10db18b88d9254d8"
+  integrity sha512-I5MW05UVX6a5Djka136oH3VzYFiZUgeOApBwFjMx6pL91eHtGVlE3adjNUKLgtwGnrxiBRuJ8+4R3LKJKwnyZg==
+  dependencies:
+    "@vue/devtools-api" "^6.2.1"
+    vue-demi "*"
+
 pkg-types@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/pkg-types/-/pkg-types-0.3.3.tgz#3c25e45274e1c586ec7811dcc3449afde846e463"
@@ -5421,6 +5437,11 @@ vue-bundle-renderer@^0.3.9:
   integrity sha512-jhkyS2Zaey9OAp2xVyGnN0//lLfNtT2elFq1NevaY4JwQEw27DFS970rQbNYPds2WXeq2H/O2HM+qCPcsimJGg==
   dependencies:
     bundle-runner "^0.0.1"
+
+vue-demi@*:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.13.7.tgz#5ae380b15c13be556ac4a0da0a48450c98a01d4b"
+  integrity sha512-hbhlvpx1gFW3TB5HxJ0mNxyA9Jh5iQt409taOs6zkhpvfJ7YzLs1rsLufJmDsjH5PI1cOyfikY1fE/meyHfU5A==
 
 vue-router@^4.1.2:
   version "4.1.3"

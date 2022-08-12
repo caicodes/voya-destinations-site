@@ -3,7 +3,7 @@ import colorModeModule from "@nuxtjs/color-mode";
 
 export default defineNuxtConfig({
   css: ["@/assets/css/tailwind.css"],
-  modules: [colorModeModule, "@nuxt/content"],
+  modules: [colorModeModule, "@nuxt/content", "@pinia/nuxt"],
   colorMode: {
     dataValue: "theme",
   },
@@ -12,7 +12,6 @@ export default defineNuxtConfig({
       postcssOptions: require("./postcss.config.js"),
     },
   },
-
   gsap: {
     extraPlugins: {
       scrollTo: true,
