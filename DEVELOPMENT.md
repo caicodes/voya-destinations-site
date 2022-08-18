@@ -443,9 +443,13 @@ The swap works great and after dropping it into the `ColorModeSelect.vue` compon
 
 Simply attaching the `$colorMode.preference` provided by the script setup won't work as it's not a boolean we need... we need `$colorMode.preference` to be the theme name, light/dark/daisy etc... We have a couple of options:
 
-1. use a method to establish the boolean and keep the working swap component from daisyUI or modify it to use a select or radio to keep the value of the theme, not a boolean... problem is, swap is an on/off with it's own presets and configuration and markup rules, so... decision time.
+1. Use a method to establish the boolean and keep the working swap component from daisyUI or modify it to use a select or radio to keep the value of the theme, not a boolean... problem is, swap is an on/off with it's own presets and configuration and markup rules, so... decision time.
 
-also, the color mode swap is using the `script setup` and I'd like to keep it that way and not create additional methods. After tinkering with a few ideas, this is the settled upon solution that works, keeps the state, keeps the swap animation we got for free and syncs with the `useColorMode()` for a working global state solution and simple implementation... while trying to use the swap as-is from daisyUI and the colorMode instance, it became apparent I was attempting to 'rig' something just for the sake of using the out of box transition animation, the problem was I could not keep that item in sync with the model and decide to create a custom piece that I could not only fully control and animate but also introduce a system as well as additional options other than just light/dark as daisyUI is fully customizable and I did like that when putting the site at 'system', it would automatically detect and adjust to my preferences in real time... so I like the idea of keeping `system` as an option that clears localStorage of a preference and responds to the users preference by default.
+2. The color mode swap is using the `script setup` and I'd like to keep it that way and not create additional methods. After tinkering with a few ideas, this is the settled upon solution that works, keeps the state, keeps the swap animation we got for free and syncs with the `useColorMode()` for a working global state solution and simple implementation... 
+
+3. While trying to use the swap as-is from daisyUI and the colorMode instance, it became apparent I was attempting to 'rig' something just for the sake of using the out of box transition animation, the problem was I could not keep that item in sync with the model and decide to create a custom piece that I could not only fully control and animate but also introduce a system as well as additional options other than just light/dark as daisyUI is fully customizable and I did like that when putting the site at 'system', it would automatically detect and adjust to my preferences in real time... 
+
+4. I like the idea of keeping `system` as an option that clears localStorage of a preference and responds to the users preference by default.
 
 Here's the custom component with a directory nested within a module I can begin to manually import into other projects and further customize.
 
@@ -569,7 +573,7 @@ I struggled to get this configuration to work and spent a few hours and was extr
 https://content.nuxtjs.org/
 
 
-# forked version begins here...
+## This project now a forked version of nuxt deluxe
 
 Just starting this as the Voya Destinations project, immediate next steps include:
 - Pinia Integration
@@ -580,4 +584,73 @@ Just starting this as the Voya Destinations project, immediate next steps includ
 For now... firebase? or more theme setting stuff? or... content... or hero builders... all integrated for use together and maximum reusability as standalone project in dev tandem
 
 
+## A Nuxt Deluxe project
+
+<img src="./project/status-update.png" />
+
+Now, with a fancy spinner welcome, we have the completed starter... The ui, the styling, the theming, and the animations are all fully loaded and ready to go with
+
+- TailwindCSS 
+- daisyUI
+- GSAP 
+- Nuxt Color Mode
+- Soon to be added...
+  - @nuxt/content
+  - firebase
+  - @tailwindcss/templates/themes/storybook etc... 
+
+This project to showcase a variety of projects...
+
+-   StripeSafePay (Stripe)
+-   PhoenixFire (Firebase)
+-   Butterfly (Flutter)
+-   DaisiesInTheWind (Next Blog)
+-   TailwindCSS Themes (Artasce)
+-   TailwindCSS Templates (Artasce)
+-   PinaColada (Pinia)
+
+
+# Now with Nuxt Content...
+
+```javascript
+<template>
+    <main>
+        <ContentDoc class="prose" />
+    </main>
+</template>
+
+```
+
+<img src="./project/hello-content.png" />
+
+Next, sidebars, filler stuff such as copyright, etc... all in portable amazing content directories! Time to start creatin come...
+```javascript
+<template>
+  <nav>
+    <ContentNavigation v-slot="{ navigation }">
+      <div v-for="link of navigation" :key="link._path">
+        <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
+      </div>
+    </ContentNavigation>
+  </nav>
+</template>
+
+```
+
+
+# Project Update/Summary 
+
+A quick update, the project asset gathering has begun, there's a wp elementor setup to create landing pages and brochure pages to describe the app.
+
+- Android/iOS app
+- website
+- landing pages
+- social marketing assets library
+- dev blog / doc site
+
+Currently active as well...
+
+- Firebase as a Backend
+- Headless WP landing page generator
+- Nuxt Site with Admin/Firebase
 
