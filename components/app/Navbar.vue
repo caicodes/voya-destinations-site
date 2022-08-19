@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar bg-base-300/20">
+  <nav class="navbar h-20">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -75,7 +75,8 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn">register</a>
+      <a class="btn rounded-full">register free</a>
+      <div class="mr-12 ml-1"><ColormodeToggleColorMode /></div>
     </div>
   </nav>
 </template>

@@ -1,20 +1,14 @@
 <template>
   <div class="app-wrapper">
-    <header class="fixed w-full z-40">
+    <header class="fixed w-full z-40 bg-base-300/20">
       <!-- nav -->
-      <MainNavbar />
+      <AppNavbar />
     </header>
     <!-- main/nuxtpage -->
-    <main class="relative py-20 bg-black">
+    <main class="relative py-20 bg-black/5">
       <NuxtPage />
     </main>
     <!-- footer -->
-    <MainFooter />
-
-    <!-- <div class="flex flex-col h-screen justify-between">
- 
-  <main class="mb-auto h-10 bg-green-500">Content</main>
-  <footer class="h-10 bg-blue-500">Footer</footer>
-</div> -->
+    <AppFooter />
   </div>
 </template>

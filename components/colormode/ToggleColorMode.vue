@@ -1,12 +1,12 @@
 <template>
   <div
     ref="switcher"
-    class="switch-container flex w-12 flex-col items-center justify-center right-4 top-20 absolute"
+    class="switch-container flex w-12 flex-col items-center justify-center absolute top-5"
     @mouseover="showSwitches"
     @mouseleave="hideSwitches"
   >
     <!-- switch track -->
-    <div ref="switchTrack" class="switch-track bg-accent rounded-full">
+    <div ref="switchTrack" class="switch-track bg-base-300/50 rounded-full">
       <!-- light -->
       <div
         ref="switchLight"
@@ -45,8 +45,6 @@ import IconLight from "@/components/colormode/icons/light.svg.vue"
 import IconDark from "@/components/colormode/icons/dark.svg.vue"
 import IconSystem from "@/components/colormode/icons/system.svg.vue"
 
-const animation = gsap.timeline()
-
 const switcher = ref()
 const switchTrack = ref()
 const switchDark = ref()
@@ -81,6 +79,8 @@ onMounted(() => {
 
   gsap.fromTo(switcher.value, { y: -200 }, { y: 0, duration: 1 })
 
+  const animation = gsap.timeline()
+
   animation
     .to(switchLight.value, {
       rotation: "+=360",
@@ -92,23 +92,23 @@ onMounted(() => {
     .to(switchSystem.value, {
       rotation: "+=360",
     })
-    .to(switchSystem.value, {
-      y: "-80",
-    })
-    .to(switchDark.value, {
-      y: "-40",
-    })
-    .to(".switch-track", {
-      height: "40",
-    })
+  // .to(switchSystem.value, {
+  //   y: "80",
+  // })
+  // .to(switchDark.value, {
+  //   y: "40",
+  // })
+  // .to(".switch-track", {
+  //   height: "40",
+  // })
 })
 </script>
 
 <style>
 .switch {
-  @apply p-2 text-accent-content cursor-pointer rounded-full relative z-0 transition-colors duration-500;
+  @apply p-2 text-base-content cursor-pointer rounded-full relative z-0 transition-colors duration-500;
 }
 .active {
-  @apply z-10 bg-accent-focus;
+  @apply z-10 bg-base-200;
 }
 </style>
