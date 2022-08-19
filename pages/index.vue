@@ -1,6 +1,6 @@
 <template>
-    <div>
-
-        <ColormodeToggleColorMode />
-    </div>
+  <div>
+    home...
+    <ColormodeToggleColorMode />
+  </div>
 </template>
