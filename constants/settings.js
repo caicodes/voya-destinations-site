@@ -1,2 +1,3 @@
-export const siteName = "voya destinations"
-export const siteSlogan = "providing quality travel since 2011"
+export const siteName = "Voya Destinations, LLC"
+
+export const siteSlogan = "Providing Quality Travel Since 2011"

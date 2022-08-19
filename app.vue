@@ -1,11 +1,11 @@
 <template>
   <div class="app-wrapper">
-    <header class="fixed w-full z-40 bg-base-300/20">
+    <header class="fixed w-full z-40 bg-primary/5">
       <!-- nav -->
       <AppNavbar />
     </header>
     <!-- main/nuxtpage -->
-    <main class="relative py-20 bg-black/5">
+    <main class="relative">
       <NuxtPage />
     </main>
     <!-- footer -->
