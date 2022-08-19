@@ -36,12 +36,6 @@
       </div>
     </div>
   </div>
-
-  <!-- controls -->
-  <div class="btn-group m-4">
-    <button @click="resumeAnimation" class="btn btn-primary">resume</button>
-    <button @click="pauseAnimation" class="btn btn-primary">pause</button>
-  </div>
 </template>
 
 <script setup>
@@ -51,25 +45,13 @@ import IconLight from "@/components/colormode/icons/light.svg.vue"
 import IconDark from "@/components/colormode/icons/dark.svg.vue"
 import IconSystem from "@/components/colormode/icons/system.svg.vue"
 
+const animation = gsap.timeline()
+
 const switcher = ref()
 const switchTrack = ref()
 const switchDark = ref()
 const switchLight = ref()
 const switchSystem = ref()
-
-const animation = gsap.timeline()
-
-const pauseAnimation = () => {
-  console.log("yo stop")
-  animation.pause()
-}
-const resumeAnimation = () => {
-  console.log("yo go")
-  animation.resume()
-}
-const restartAnimation = () => {
-  console.log("restart yo")
-}
 
 const showSwitches = () => {
   gsap.to(switchTrack.value, { height: 120 })

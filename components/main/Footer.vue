@@ -2,7 +2,7 @@
 import { siteName, siteSlogan } from "@/constants/settings"
 </script>
 <template>
-  <div class="absolute w-full bottom-0">
+  <div class="absolute w-full bottom-0 -z-50">
     <footer class="footer p-10 bg-base-200 flex space-x-12">
       <div class="w-1/3">
         <span class="footer-title">Services</span>

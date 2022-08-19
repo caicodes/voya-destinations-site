@@ -1,9 +1,9 @@
-import { defineNuxtConfig } from "nuxt";
-import colorModeModule from "@nuxtjs/color-mode";
+import { defineNuxtConfig } from "nuxt"
+import colorModeModule from "@nuxtjs/color-mode"
 
 export default defineNuxtConfig({
   css: ["@/assets/css/tailwind.css"],
-  modules: [colorModeModule, "@nuxt/content", "@pinia/nuxt"],
+  modules: [colorModeModule, "@pinia/nuxt"],
   colorMode: {
     dataValue: "theme",
   },
@@ -21,4 +21,4 @@ export default defineNuxtConfig({
       expoScaleEase: true,
     },
   },
-});
+})
