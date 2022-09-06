@@ -3,7 +3,7 @@ import { NavMenuItems } from "@/constants/menus"
 </script>
 
 <template>
-  <nav class="navbar h-20">
+  <nav class="navbar h-20 bg-black/60">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden"

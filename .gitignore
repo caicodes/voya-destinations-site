@@ -7,4 +7,6 @@ node_modules
 .env
 dist
 .firebase
-.modules 
+modules 
+archive
+.DS_Store
