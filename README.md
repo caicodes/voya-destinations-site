@@ -1,10 +1,14 @@
 <img src='./project/screenshot.jpg' alt='voya' />
 # Voya Destinations... 
 
+Screenshot above of the homepage with responsive video background in vue 3.
+
 Two sites currently for the voya project...
 
 -   https://voya-destinations.web.app
 -   https://voya.web.app *coming soon...*
+
+
 
 ## voya app
 
