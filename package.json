@@ -22,6 +22,7 @@
     "@pinia/nuxt": "^0.4.0",
     "daisyui": "^2.22.0",
     "firebase": "^9.9.3",
-    "gsap": "^3.10.4"
+    "gsap": "^3.10.4",
+    "vue-responsive-video-background-player": "^2.2.3"
   }
 }

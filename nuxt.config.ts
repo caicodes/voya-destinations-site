@@ -4,6 +4,7 @@ import colorModeModule from "@nuxtjs/color-mode"
 export default defineNuxtConfig({
   css: ["@/assets/css/tailwind.css"],
   modules: [colorModeModule, "@pinia/nuxt"],
+
   colorMode: {
     dataValue: "theme",
   },

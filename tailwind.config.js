@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class", '[data-theme="dark"]'],
   content: [
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
@@ -22,32 +23,32 @@ module.exports = {
     themes: [
       {
         light: {
-          primary: "#2563eb",
-          secondary: "#1e3a8a",
-          accent: "#bef264",
-          "accent-content": "#4e8b44",
-          neutral: "#cffafe",
-          "base-100": "#1e3a8a",
-          info: "#0284c7",
-          success: "#059669",
-          warning: "#ea580c",
-          error: "#be123c",
+          primary: "#09ecf3",
+          "primary-content": "#005355",
+          secondary: "#966fb3",
+          accent: "#ffe999",
+          neutral: "#3b8ac4",
+          "base-100": "#345da7",
+          info: "#2563eb",
+          success: "#16a34a",
+          warning: "#d97706",
+          error: "#dc2626",
         },
       },
       {
         dark: {
-          primary: "#082054",
-          secondary: "#3b82f6",
-          accent: "#5c870d",
-          "accent-content": "#e8ff3e",
-          neutral: "#cffafe",
-          "base-100": "#060d1d",
-          info: "#0284c7",
-          success: "#059669",
-          warning: "#ea580c",
-          error: "#be123c",
+          primary: "#38bdf8",
+          secondary: "#818CF8",
+          accent: "#F471B5",
+          neutral: "#1E293B",
+          "neutral-focus": "#273449",
+          "base-100": "#0F172A",
+          info: "#0CA5E9",
+          success: "#2DD4BF",
+          warning: "#F4BF50",
+          error: "#FB7085",
         },
       },
     ],
   },
-};
+}

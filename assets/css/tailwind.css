@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-yt: transparent;
+}
+
+.youtube:hover {
+  --bg-yt: white;
+}
+
 html,
 body {
   transition: background-color 0.618s linear;
